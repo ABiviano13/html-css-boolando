@@ -19,19 +19,23 @@ a{
 }
 
 /* HEADER STYLE */
-.container-nav, .white-text{
+.container-nav{
     background-color: #FF6900;
     padding: 10px;
-    color: white;
 }
 
 .row{
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
 }
 
-.row-nav{
+.justify-around{
     justify-content: space-around;
+}
+
+.white-text{
+    color: white;
 }
 
 .logo{
@@ -50,7 +54,26 @@ a{
     flex-basis: calc(100% / 4)
 }
 
+/* FOOTER */
+.page-content{
+    background-color: black;
+}
+.small-text{
+    font-size: 10px;
+}
+.medium-text{
+    font-size: 13px;
+}
+.icon-social{
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+i{
+    flex-basis: 20px;
 
+}
 
 /* DEBUG STYLE */
 .row-main .col{
