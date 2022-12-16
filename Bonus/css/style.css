@@ -1,0 +1,185 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+img{
+    max-width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* HEADER STYLE */
+.container-nav{
+    background-color: #FF6900;
+    padding: 10px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.justify-around{
+    justify-content: space-around;
+}
+
+.white-text{
+    color: white;
+}
+
+.logo{
+    flex-basis: 100px;
+}
+
+
+/* MAIN */
+.row-main{
+    margin: 40px;
+    justify-content: center;
+    align-content: center;
+    gap: 10px;
+}
+
+.col{
+    flex-basis: calc(100% / 4);
+
+}
+
+.rel-image{
+    position: relative;
+}
+
+/* DISCOUNT + HEART*/
+.discount{
+    font-size: 9px;
+    display: flex;
+    gap: 2px;
+    position: absolute;
+    bottom: 25px;
+
+}
+.discount .size{
+    flex-basis: 20px;
+    padding: 3px ;
+}
+
+.discount .discount-red{
+    background-color: red;
+}
+
+.discount .sost-green{
+    background-color: green;
+}
+
+.heart{
+    background-color: white;
+    padding: 5px;
+    text-align: center;
+    position: absolute;
+    top: 5px;
+    right: 0;
+}
+
+/* DESCRIPTION_IMAGE */
+.gray{
+    color: gray;
+}
+
+.col-description > .discount-price{
+    color: red;
+}
+
+.col-description > .original-price{
+    text-decoration:line-through;
+}
+
+/* FOOTER */
+.page-content{
+    background-color: black;
+    padding: 10px;
+}
+
+.line-foot{
+    line-height: 20px;
+}
+
+.align-foot{
+    text-align: center;
+}
+
+.small-text{
+    font-size: 10px;
+}
+
+.medium-text{
+    font-size: 13px;
+}
+
+.icon{
+    color: white;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+i{
+    color: white;
+}
+
+/* BONUS */
+.image-1, .image-2, .image-3, .image-4, .image-5, .image-6{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    transform: scale(0);
+    transition: .3s ease;
+}
+
+.rel-image:hover .image-1{
+    transform: scale(1);
+}
+
+.rel-image:hover .image-2{
+    transform: scale(1);
+}
+
+.rel-image:hover .image-3{
+    transform: scale(1);
+}
+
+.rel-image:hover .image-4{
+    transform: scale(1);
+}
+
+.rel-image:hover .image-5{
+    transform: scale(1);
+}
+
+.rel-image:hover .image-6{
+    transform: scale(1);
+}
+
+
+
+
+/* DEBUG STYLE */
+.debug .row-main .col{
+    background-color: blueviolet;
+    padding: 40px;
+}
