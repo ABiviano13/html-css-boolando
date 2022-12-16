@@ -7,7 +7,7 @@
 
 .container{
     margin: 0 auto;
-    max-width: 900px;
+    max-width: 1000px;
 }
 
 img{
@@ -25,8 +25,12 @@ a{
     color: white;
 }
 
-.row-nav{
+.row{
     display: flex;
+    flex-wrap: wrap;
+}
+
+.row-nav{
     justify-content: space-around;
 }
 
@@ -35,7 +39,21 @@ a{
 }
 
 
+/* MAIN */
+.row-main{
+    margin: 40px;
+    justify-content: center;
+    gap: 10px;
+}
+
+.col{
+    flex-basis: calc(100% / 4)
+}
 
 
 
 /* DEBUG STYLE */
+.row-main .col{
+    background-color: blueviolet;
+    padding: 40px;
+}
